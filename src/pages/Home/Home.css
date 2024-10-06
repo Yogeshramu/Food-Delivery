@@ -1,0 +1,12 @@
+/* MainPage.css */
+#cart-section {
+    position: relative; /* Adjust positioning as needed */
+    margin-top: 20px; /* Add space above if necessary */
+    padding: 20px; /* Padding for content inside */
+}
+
+#explore-menu {
+    padding: 20px; /* Padding for the food list section */
+}
+
+/* Additional styles for your cart and food items as needed */

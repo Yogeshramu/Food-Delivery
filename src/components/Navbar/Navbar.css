@@ -1,0 +1,112 @@
+/* Navbar Container */
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+/* Logo Styles */
+.navbar .logo {
+    width: 150px;
+}
+
+/* Navbar Menu Styles */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    align-items: center;
+}
+
+/* Cart Text Styles */
+.navbar-cart-text {
+    cursor: pointer;
+    font-size: 16px;
+    color: #49557e;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-cart-text .dot {
+    margin-left: 5px;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+/* Button Styles */
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2; /* Hover effect */
+}
+
+/* Active Menu Item Styles */
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e; /* Active item underline */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: absolute; /* Position relative to the input */
+    background-color: white; /* Dropdown background */
+    border: 1px solid #ccc; /* Border for dropdown */
+    z-index: 1000; /* Ensure dropdown is on top */
+    width: 100%; /* Match the input width */
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Scroll if too many items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Dropdown Item Styles */
+.dropdown-item {
+    padding: 10px; /* Spacing inside dropdown items */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none; /* Hide menu on smaller screens */
+    }
+}

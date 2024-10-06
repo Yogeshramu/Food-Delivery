@@ -1,0 +1,152 @@
+.place-order {
+    display: flex;
+    align-items: start; /* Align items at the start of the container */
+    justify-content: space-between; /* Space out the left and right sections */
+    gap: 50px; /* Space between the left and right sections */
+    margin-top: 100px; /* Space from the top */
+    padding: 20px; /* Inner padding for the container */
+    max-width: 1200px; /* Max width for the form */
+    margin: 100px auto; /* Center the form with margin from top */
+    border: 1px solid #ddd; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #fff; /* White background */
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px); /* Responsive width */
+}
+
+.place-order-left .title {
+    font-size: 30px; /* Title font size */
+    font-weight: 600; /* Title font weight */
+    margin-bottom: 50px; /* Space below title */
+}
+
+.place-order-left input {
+    margin-bottom: 15px; /* Space between inputs */
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Inner padding for inputs */
+    border: 1px solid #c5c5c5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    outline-color: tomato; /* Outline color when focused */
+}
+
+.place-order-left .multi-fields {
+    display: flex; /* Flex layout for multi-field inputs */
+    gap: 20px; /* Space between multi-field inputs */
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px); /* Responsive width */
+}
+
+.cart-summary {
+    margin-bottom: 20px; /* Space below cart summary */
+    background-color: #f9f9f9; /* Light background for summary */
+    padding: 20px; /* Inner padding for summary */
+    border-radius: 8px; /* Rounded corners for summary */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.cart-items {
+    margin-bottom: 10px; /* Space below cart items */
+}
+
+.cart-item {
+    display: flex; /* Flex layout for cart items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space below each cart item */
+}
+
+.cart-item-image {
+    width: 50px; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
+    border-radius: 5px; /* Rounded corners for image */
+    margin-right: 10px; /* Space between image and details */
+}
+
+.cart-item-details {
+    flex: 1; /* Take up remaining space */
+}
+
+.cart-item-name {
+    font-weight: bold; /* Bold font for item name */
+}
+
+.cart-item-price {
+    color: tomato; /* Price color */
+}
+
+.cart-item-quantity {
+    font-size: 12px; /* Smaller font size for quantity */
+    color: #555; /* Color for quantity */
+}
+
+.cart-total {
+    margin-top: 20px; /* Space above total */
+    padding: 20px; /* Inner padding for total section */
+    border: 1px solid #e0e0e0; /* Border around total section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for total section */
+}
+
+.cart-total h2 {
+    font-size: 24px; /* Font size for the total title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.cart-total-details {
+    display: flex; /* Flex layout for total details */
+    justify-content: space-between; /* Space between label and value */
+    margin: 10px 0; /* Space above and below total details */
+}
+
+.cart-total-details p {
+    font-size: 16px; /* Font size for subtotal and delivery fee */
+    color: #333; /* Color for text */
+}
+
+.cart-total-details b {
+    font-size: 20px; /* Larger font size for totals */
+    color: #000; /* Color for total */
+}
+
+.cart-item-summary {
+    margin-top: 20px; /* Space above item summary */
+    padding: 10px; /* Inner padding for item summary */
+    border: 1px solid #e0e0e0; /* Border around item summary */
+    border-radius: 5px; /* Rounded corners for item summary */
+    background-color: #f2f2f2; /* Slightly darker background for item summary */
+}
+
+.cart-item-summary-item {
+    display: flex; /* Flex layout for each item */
+    justify-content: space-between; /* Space between name and quantity */
+    margin-bottom: 10px; /* Space below each item */
+}
+
+.cart-item-summary-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for item details */
+}
+
+.proceed-button {
+    margin-top: 30px; /* Space above button */
+    background-color: #28a745; /* Green button background */
+    color: #fff; /* Button text color */
+    padding: 12px 20px; /* Inner padding for button */
+    border: none; /* No border for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s; /* Transition for background color */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width button */
+}
+
+.proceed-button:hover {
+    background-color: #218838; /* Darker button color on hover */
+}

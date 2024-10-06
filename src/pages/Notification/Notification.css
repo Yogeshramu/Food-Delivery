@@ -1,0 +1,56 @@
+.notification-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 1000;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Adds separation between items */
+    padding-bottom: 10px;
+}
+
+.notification-item p {
+    margin: 0;
+}
+
+.close-button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #ff0000; /* Darker red on hover */
+}
+
+.checkout-button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.checkout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

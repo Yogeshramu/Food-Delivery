@@ -1,0 +1,86 @@
+.food-display {
+    margin-top: 30px; /* Adjust this if you want more space at the top */
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px; /* Adjust margin as needed */
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.search-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Positioning for dropdown */
+    margin-bottom: 0; /* Remove margin below the search container */
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Add padding to the left for the button */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+}
+
+.clear-button {
+    position: absolute;
+    right: 10px; /* Align to the right of the search input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    border: none;
+    background-color: transparent; /* Make background transparent */
+    color: #49557e; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the clear button */
+    padding: 0; /* No padding */
+}
+
+.clear-button:hover {
+    color: #3b4a80; /* Darker text on hover */
+}
+
+.dropdown {
+    position: absolute; /* Positioning dropdown */
+    background: white; /* Background color */
+    border: 1px solid #ccc; /* Border for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    width: calc(100% - 2px); /* Match input width */
+    z-index: 1; /* Ensure it appears above other elements */
+    max-height: 200px; /* Limit dropdown height */
+    overflow-y: auto; /* Scroll if too many items */
+    margin-top: 0; /* Remove margin to avoid padding effect */
+}
+
+.dropdown-item {
+    padding: 10px; /* Space inside dropdown items */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0; /* Highlight on hover */
+}
+
+.food-item {
+    transition: border-color 0.3s ease;
+    border: 1px solid transparent; /* Default border */
+    border-radius: 4px; /* Optional: add rounded corners */
+    padding: 10px; /* Optional: padding for the food item */
+}
+
+.food-item.selected {
+    border: 2px solid #007BFF; /* Edge color when selected */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Optional: add a glow effect */
+}
+
+.food-item:hover {
+    border: 2px solid #007BFF; /* Edge color on hover */
+}
